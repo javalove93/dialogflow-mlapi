@@ -1,0 +1,559 @@
+ * Running on http://0.0.0.0:6000/ (Press CTRL+C to quit)
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 420-340-433
+127.0.0.1 - - [09/May/2018 01:30:09] "GET / HTTP/1.1" 200 -
+[[u'confidence', u'\ud655\uc2e0, \uc2e0\ub8b0, \uc790\uc2e0, \uc790\uc2e0\uac10'], [u'trust', u'\uc2e0\ub8b0, \uc2e0\uc784, \uc2e0\ub8b0\ud558\ub2e4'], [u'country', u'\ub098\ub77c, \uad6d\uac00'], [u'human', u'\uc0ac\ub78c, \uc778\uac04'], [u'computer', u'\ucef4\ud4e8\ud130'], [u'fan', u'\uc120\ud48d\uae30'], [u'stop', u'\uc911\ub2e8, \uadf8\ub9cc'], [u'space', u'\uacf5\uac04'], [u'turtle', u'\uac70\ubd81\uc774'], [u'watch', u'\ubcf4\ub2e4, \uc2dc\uccad\ud558\ub2e4, \uad00\ucc30\ud558\ub2e4'], [u'belong', u'\uc18d\ud558\ub2e4'], [u'opportunity', u'\uae30\ud68c, \ucc2c\uc2a4'], [u'victory', u'\uc2b9\ub9ac, \uc2b9\ub9ac\ud558\ub2e4'], [u'obey', u'\ubcf5\uc885\ud558\ub2e4'], [u'report', u'\ubcf4\uace0\ud558\ub2e4'], [u'whisker', u'\uc218\uc5fc, \uad6c\ub81b\ub098\ub8e8']]
+Dialogflow Request:
+null
+Dialogflow Request:
+{
+    "queryResult": {
+        "fulfillmentMessages": [
+            {
+                "text": {
+                    "text": [
+                        "default response from english-test"
+                    ]
+                }
+            }
+        ], 
+        "fulfillmentText": "default response from english-test", 
+        "allRequiredParamsPresent": true, 
+        "parameters": {
+            "language": "\uc601\uc5b4"
+        }, 
+        "languageCode": "ko", 
+        "intentDetectionConfidence": 1.0, 
+        "action": "start-english", 
+        "intent": {
+            "displayName": "start-english-test", 
+            "name": "projects/mlapi-demo/agent/intents/4b54786f-9e62-4fbf-a2a9-08a045172c7e"
+        }, 
+        "diagnosticInfo": {}, 
+        "queryText": "\uc601\uc5b4 \ud14c\uc2a4\ud2b8", 
+        "outputContexts": [
+            {
+                "name": "projects/mlapi-demo/agent/sessions/1525797093968/contexts/actions_capability_screen_output", 
+                "parameters": {
+                    "language.original": "\uc601\uc5b4", 
+                    "language": "\uc601\uc5b4"
+                }
+            }, 
+            {
+                "parameters": {
+                    "language.original": "\uc601\uc5b4", 
+                    "language": "\uc601\uc5b4"
+                }, 
+                "name": "projects/mlapi-demo/agent/sessions/1525797093968/contexts/english-test", 
+                "lifespanCount": 10
+            }, 
+            {
+                "name": "projects/mlapi-demo/agent/sessions/1525797093968/contexts/google_assistant_input_type_voice", 
+                "parameters": {
+                    "language.original": "\uc601\uc5b4", 
+                    "language": "\uc601\uc5b4"
+                }
+            }, 
+            {
+                "name": "projects/mlapi-demo/agent/sessions/1525797093968/contexts/actions_capability_audio_output", 
+                "parameters": {
+                    "language.original": "\uc601\uc5b4", 
+                    "language": "\uc601\uc5b4"
+                }
+            }, 
+            {
+                "name": "projects/mlapi-demo/agent/sessions/1525797093968/contexts/actions_capability_media_response_audio", 
+                "parameters": {
+                    "language.original": "\uc601\uc5b4", 
+                    "language": "\uc601\uc5b4"
+                }
+            }, 
+            {
+                "name": "projects/mlapi-demo/agent/sessions/1525797093968/contexts/actions_capability_web_browser", 
+                "parameters": {
+                    "language.original": "\uc601\uc5b4", 
+                    "language": "\uc601\uc5b4"
+                }
+            }
+        ]
+    }, 
+    "originalDetectIntentRequest": {
+        "source": "google", 
+        "version": "2", 
+        "payload": {
+            "inputs": [
+                {
+                    "rawInputs": [
+                        {
+                            "query": "\uc601\uc5b4 \ud14c\uc2a4\ud2b8", 
+                            "inputType": "VOICE"
+                        }
+                    ], 
+                    "intent": "actions.intent.TEXT", 
+                    "arguments": [
+                        {
+                            "rawText": "\uc601\uc5b4 \ud14c\uc2a4\ud127.0.0.1 - - [09/May/2018 01:31:38] "POST / HTTP/1.1" 200 -
+2b8", 
+                            "textValue": "\uc601\uc5b4 \ud14c\uc2a4\ud2b8", 
+                            "name": "text"
+                        }
+                    ]
+                }
+            ], 
+            "isInSandbox": true, 
+            "surface": {
+                "capabilities": [
+                    {
+                        "name": "actions.capability.SCREEN_OUTPUT"
+                    }, 
+                    {
+                        "name": "actions.capability.AUDIO_OUTPUT"
+                    }, 
+                    {
+                        "name": "actions.capability.WEB_BROWSER"
+                    }, 
+                    {
+                        "name": "actions.capability.MEDIA_RESPONSE_AUDIO"
+                    }
+                ]
+            }, 
+            "conversation": {
+                "conversationId": "1525797093968", 
+                "type": "ACTIVE", 
+                "conversationToken": "[]"
+            }, 
+            "availableSurfaces": [
+                {
+                    "capabilities": [
+                        {
+                            "name": "actions.capability.SCREEN_OUTPUT"
+                        }, 
+                        {
+                            "name": "actions.capability.AUDIO_OUTPUT"
+                        }
+                    ]
+                }
+            ], 
+            "user": {
+                "locale": "ko-KR", 
+                "userId": "ABwppHEDKIqvivYeHkHYDTuCxt9C4-KnE1EzcNczdx6fdX_qv43jOT77Qqz2ppG3RUszF7KJv28eAQ", 
+                "lastSeen": "2018-05-08T12:55:55Z"
+            }
+        }
+    }, 
+    "session": "projects/mlapi-demo/agent/sessions/1525797093968", 
+    "responseId": "79a39f13-f9bc-42a2-8b88-4d89315b5648"
+}
+Aciont: start-english
+Response: {"followupEventInput": {"name": "QUESTION"}}
+Dialogflow Request:
+{
+    "queryResult": {
+        "fulfillmentMessages": [
+            {
+                "text": {
+                    "text": [
+                        ""
+                    ]
+                }
+            }
+        ], 
+        "allRequiredParamsPresent": true, 
+        "parameters": {}, 
+        "languageCode": "ko", 
+        "intentDetectionConfidence": 1.0, 
+        "action": "question", 
+        "intent": {
+            "displayName": "question", 
+            "name": "projects/mlapi-demo/agent/intents/70d894f3-2e37-47b6-a34e-b8b1dbd6f1c7"
+        }, 
+        "diagnosticInfo": {}, 
+        "queryText": "QUESTION", 
+        "outputContexts": [
+            {
+                "name": "projects/mlapi-demo/agent/sessions/1525797093968/contexts/question"
+            }, 
+            {
+                "parameters": {
+                    "language.original": "\uc601\uc5b4", 
+                    "language": "\uc601\uc5b4"
+                }, 
+                "name": "projects/mlapi-demo/agent/sessions/1525797093968/contexts/english-test", 
+                "lifespanCount": 5
+            }
+        ]
+    }, 
+    "originalDetectIntentRequest": {
+        "source": "google", 
+        "version": "2", 
+        "payload": {
+            "inputs": [
+                {
+                    "rawInputs": [
+                        {
+                            "query": "\uc601\uc5b4 \ud14c\uc2a4\ud2b8", 
+                            "inputType": "VOICE"
+                        }
+                    ], 
+                    "intent": "actions.intent.TEXT", 
+                    "arguments": [
+                        {
+                            "rawText": "\uc601\uc5b4 \ud14c\uc2a4\ud2b8", 
+                            "textValue": "\uc601\uc5b4 \ud14c\uc2a4\ud2b8", 
+                            "name": "text"
+                        }
+                    ]
+                }
+            ], 
+            "isInSandbox": true, 
+            "surface": {
+                "capabilities": [
+                    {
+                        "name": "actions.capability.SCREEN_OUTPUT"
+                    }, 
+                    {
+                        "name": "actions.capability.AUDIO_OUTPUT"
+                    }, 
+                    {
+                        "name": 127.0.0.1 - - [09/May/2018 01:31:38] "POST / HTTP/1.1" 200 -
+"actions.capability.WEB_BROWSER"
+                    }, 
+                    {
+                        "name": "actions.capability.MEDIA_RESPONSE_AUDIO"
+                    }
+                ]
+            }, 
+            "conversation": {
+                "conversationId": "1525797093968", 
+                "type": "ACTIVE", 
+                "conversationToken": "[]"
+            }, 
+            "availableSurfaces": [
+                {
+                    "capabilities": [
+                        {
+                            "name": "actions.capability.SCREEN_OUTPUT"
+                        }, 
+                        {
+                            "name": "actions.capability.AUDIO_OUTPUT"
+                        }
+                    ]
+                }
+            ], 
+            "user": {
+                "locale": "ko-KR", 
+                "userId": "ABwppHEDKIqvivYeHkHYDTuCxt9C4-KnE1EzcNczdx6fdX_qv43jOT77Qqz2ppG3RUszF7KJv28eAQ", 
+                "lastSeen": "2018-05-08T12:55:55Z"
+            }
+        }
+    }, 
+    "session": "projects/mlapi-demo/agent/sessions/1525797093968", 
+    "responseId": "b9f30e56-09f2-4da1-ab57-ebbbb83b3371"
+}
+Aciont: question
+Question No: 15
+Response: {"outputContexts": [{"parameters": {"question": "whisker", "answers": "\uc218\uc5fc, \uad6c\ub81b\ub098\ub8e8"}, "name": "projects/${PROJECT_ID}/agent/sessions/${SESSION_ID}/contexts/english-test", "lifespanCount": 10}], "fulfillmentText": "\ubb38\uc81c: whisker"}
+Dialogflow Request:
+{
+    "queryResult": {
+        "fulfillmentMessages": [
+            {
+                "text": {
+                    "text": [
+                        ""
+                    ]
+                }
+            }
+        ], 
+        "allRequiredParamsPresent": true, 
+        "parameters": {
+            "answer": "\uc218\uc5fc"
+        }, 
+        "languageCode": "ko", 
+        "intentDetectionConfidence": 1.0, 
+        "action": "answer", 
+        "intent": {
+            "displayName": "answer", 
+            "name": "projects/mlapi-demo/agent/intents/57b71c23-6c38-4ce5-890d-7540719f88ac"
+        }, 
+        "diagnosticInfo": {}, 
+        "queryText": "\uc815\ub2f5 \uc218\uc5fc", 
+        "outputContexts": [
+            {
+                "name": "projects/mlapi-demo/agent/sessions/1525797093968/contexts/actions_capability_screen_output", 
+                "parameters": {
+                    "answer": "\uc218\uc5fc", 
+                    "answer.original": "\uc218\uc5fc"
+                }
+            }, 
+            {
+                "parameters": {
+                    "language": "\uc601\uc5b4", 
+                    "answer.original": "\uc218\uc5fc", 
+                    "language.original": "\uc601\uc5b4", 
+                    "question": "whisker", 
+                    "answers": "\uc218\uc5fc, \uad6c\ub81b\ub098\ub8e8", 
+                    "answer": "\uc218\uc5fc"
+                }, 
+                "name": "projects/mlapi-demo/agent/sessions/1525797093968/contexts/english-test", 
+                "lifespanCount": 5
+            }, 
+            {
+                "parameters": {
+                    "answer": "\uc218\uc5fc", 
+                    "answer.original": "\uc218\uc5fc"
+                }, 
+                "name": "projects/mlapi-demo/agent/sessions/1525797093968/contexts/answer-followup", 
+                "lifespanCount": 2
+            }, 
+            {
+                "name": "projects/mlapi-demo/agent/sessions/1525797093968/contexts/actions_capability_audio_output", 
+                "parameters": {
+                    "answer": "\uc218\uc5fc", 
+                    "answer.original": "\uc218\uc5fc"
+                }
+            }, 
+            {
+                "name": "projects/mlapi-demo/agent/sessions/1525797093968/contexts/google_assistant_input_type_voice", 
+                "parameters": {
+                    "answer": "\uc218\uc5fc", 
+                    "answer.original": "\uc218\uc5fc"
+                }
+            }, 
+            {
+                "name": "projects/mlapi-demo/agent/sessions/1525797093968/contexts/actions_capability_web_browser", 
+         127.0.0.1 - - [09/May/2018 01:31:45] "POST / HTTP/1.1" 200 -
+       "parameters": {
+                    "answer": "\uc218\uc5fc", 
+                    "answer.original": "\uc218\uc5fc"
+                }
+            }, 
+            {
+                "name": "projects/mlapi-demo/agent/sessions/1525797093968/contexts/actions_capability_media_response_audio", 
+                "parameters": {
+                    "answer": "\uc218\uc5fc", 
+                    "answer.original": "\uc218\uc5fc"
+                }
+            }
+        ]
+    }, 
+    "originalDetectIntentRequest": {
+        "source": "google", 
+        "version": "2", 
+        "payload": {
+            "inputs": [
+                {
+                    "rawInputs": [
+                        {
+                            "query": "\uc815\ub2f5 \uc218\uc5fc", 
+                            "inputType": "VOICE"
+                        }
+                    ], 
+                    "intent": "actions.intent.TEXT", 
+                    "arguments": [
+                        {
+                            "rawText": "\uc815\ub2f5 \uc218\uc5fc", 
+                            "textValue": "\uc815\ub2f5 \uc218\uc5fc", 
+                            "name": "text"
+                        }
+                    ]
+                }
+            ], 
+            "isInSandbox": true, 
+            "surface": {
+                "capabilities": [
+                    {
+                        "name": "actions.capability.SCREEN_OUTPUT"
+                    }, 
+                    {
+                        "name": "actions.capability.AUDIO_OUTPUT"
+                    }, 
+                    {
+                        "name": "actions.capability.WEB_BROWSER"
+                    }, 
+                    {
+                        "name": "actions.capability.MEDIA_RESPONSE_AUDIO"
+                    }
+                ]
+            }, 
+            "conversation": {
+                "conversationId": "1525797093968", 
+                "type": "ACTIVE", 
+                "conversationToken": "[\"english-test\"]"
+            }, 
+            "availableSurfaces": [
+                {
+                    "capabilities": [
+                        {
+                            "name": "actions.capability.SCREEN_OUTPUT"
+                        }, 
+                        {
+                            "name": "actions.capability.AUDIO_OUTPUT"
+                        }
+                    ]
+                }
+            ], 
+            "user": {
+                "locale": "ko-KR", 
+                "userId": "ABwppHEDKIqvivYeHkHYDTuCxt9C4-KnE1EzcNczdx6fdX_qv43jOT77Qqz2ppG3RUszF7KJv28eAQ", 
+                "lastSeen": "2018-05-08T12:55:55Z"
+            }
+        }
+    }, 
+    "session": "projects/mlapi-demo/agent/sessions/1525797093968", 
+    "responseId": "dc2c4bf4-bea7-4ca6-b949-3e90d00734e3"
+}
+Aciont: answer
+[u'\uc218\uc5fc', u'\uad6c\ub81b\ub098\ub8e8']
+Response: {"fulfillmentText": "\ub9de\uc558\uc2b5\ub2c8\ub2e4"}
+Dialogflow Request:
+{
+    "queryResult": {
+        "fulfillmentMessages": [
+            {
+                "text": {
+                    "text": [
+                        "default response from english-test"
+                    ]
+                }
+            }
+        ], 
+        "fulfillmentText": "default response from english-test", 
+        "allRequiredParamsPresent": true, 
+        "parameters": {
+            "language": "\uc601\uc5b4"
+        }, 
+        "languageCode": "ko", 
+        "intentDetectionConfidence": 1.0, 
+        "action": "start-english", 
+        "intent": {
+            "displayName": "start-english-test", 
+            "name": "projects/mlapi-demo/agent/intents/4b54786f-9e62-4fbf-a2a9-08a045172c7e"
+        }, 
+        "diagnosticInfo": {}, 
+        "queryText": "\uc601\uc5b4\ud14c\uc2a4\ud2b8", 
+        "outputContexts": [
+            {
+                "name": "projects/mlapi-demo/agent/sessions/1525826554137/contexts/actions_capability_screen_output", 
+                "parameters": {
+                    "language.original": "\uc601\uc5b4", 
+                    "language": "\uc601\uc5b4"
+                }
+            }, 
+            {
+          127.0.0.1 - - [09/May/2018 09:42:42] "POST / HTTP/1.1" 200 -
+      "parameters": {
+                    "language.original": "\uc601\uc5b4", 
+                    "language": "\uc601\uc5b4"
+                }, 
+                "name": "projects/mlapi-demo/agent/sessions/1525826554137/contexts/english-test", 
+                "lifespanCount": 10
+            }, 
+            {
+                "name": "projects/mlapi-demo/agent/sessions/1525826554137/contexts/actions_capability_audio_output", 
+                "parameters": {
+                    "language.original": "\uc601\uc5b4", 
+                    "language": "\uc601\uc5b4"
+                }
+            }, 
+            {
+                "name": "projects/mlapi-demo/agent/sessions/1525826554137/contexts/google_assistant_input_type_keyboard", 
+                "parameters": {
+                    "language.original": "\uc601\uc5b4", 
+                    "language": "\uc601\uc5b4"
+                }
+            }, 
+            {
+                "name": "projects/mlapi-demo/agent/sessions/1525826554137/contexts/actions_capability_web_browser", 
+                "parameters": {
+                    "language.original": "\uc601\uc5b4", 
+                    "language": "\uc601\uc5b4"
+                }
+            }, 
+            {
+                "name": "projects/mlapi-demo/agent/sessions/1525826554137/contexts/actions_capability_media_response_audio", 
+                "parameters": {
+                    "language.original": "\uc601\uc5b4", 
+                    "language": "\uc601\uc5b4"
+                }
+            }
+        ]
+    }, 
+    "originalDetectIntentRequest": {
+        "source": "google", 
+        "version": "2", 
+        "payload": {
+            "inputs": [
+                {
+                    "rawInputs": [
+                        {
+                            "query": "\uc601\uc5b4\ud14c\uc2a4\ud2b8", 
+                            "inputType": "KEYBOARD"
+                        }
+                    ], 
+                    "intent": "actions.intent.TEXT", 
+                    "arguments": [
+                        {
+                            "rawText": "\uc601\uc5b4\ud14c\uc2a4\ud2b8", 
+                            "textValue": "\uc601\uc5b4\ud14c\uc2a4\ud2b8", 
+                            "name": "text"
+                        }
+                    ]
+                }
+            ], 
+            "isInSandbox": true, 
+            "surface": {
+                "capabilities": [
+                    {
+                        "name": "actions.capability.WEB_BROWSER"
+                    }, 
+                    {
+                        "name": "actions.capability.AUDIO_OUTPUT"
+                    }, 
+                    {
+                        "name": "actions.capability.SCREEN_OUTPUT"
+                    }, 
+                    {
+                        "name": "actions.capability.MEDIA_RESPONSE_AUDIO"
+                    }
+                ]
+            }, 
+            "conversation": {
+                "conversationId": "1525826554137", 
+                "type": "ACTIVE", 
+                "conversationToken": "[]"
+            }, 
+            "availableSurfaces": [
+                {
+                    "capabilities": [
+                        {
+                            "name": "actions.capability.AUDIO_OUTPUT"
+                        }, 
+                        {
+                            "name": "actions.capability.SCREEN_OUTPUT"
+                        }
+                    ]
+                }
+            ], 
+            "user": {
+                "locale": "ko-KR", 
+                "userId": "ABwppHEDKIqvivYeHkHYDTuCxt9C4-KnE1EzcNczdx6fdX_qv43jOT77Qqz2ppG3RUszF7KJv28eAQ", 
+                "lastSeen": "2018-05-09T00:42:25Z"
+            }
+        }
+    }, 
+    "session": "projects/mlapi-demo/agent/sessions/1525826554137", 
+    "responseId": "6cc0c579-de03-4957-934e-e003c62ae404"
+}
+Aciont: start-english
+Response: {"followupEventInput": {"name": "QUESTION"}}
+Dialogflow Request:
+{
+    "queryResult": {
+        "fulfillmentMessages": [
+            {
+                "text": {
+                    "text": [
+                        ""
+  127.0.0.1 - - [09/May/2018 09:42:42] "POST / HTTP/1.1" 200 -
