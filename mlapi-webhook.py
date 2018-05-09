@@ -209,6 +209,7 @@ def loadSheet():
     service = discovery.build('sheets', 'v4', credentials=credentials,
                             discoveryServiceUrl=discoveryUrl)
 
+    # Change id to your Google Sheets
     spreadsheetId = '1gg8KK6nJewBV46u1EZ5rIabs8SVJqW4cRJuIFsgmjIE'
     rangeName = 'Sheet1!A:C'
     majorDimension = 'ROWS'

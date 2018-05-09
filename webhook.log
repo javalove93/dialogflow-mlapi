@@ -557,3 +557,105 @@ Dialogflow Request:
                     "text": [
                         ""
   127.0.0.1 - - [09/May/2018 09:42:42] "POST / HTTP/1.1" 200 -
+ * Detected change in '/home/work/google/dialogflow-mlapi/mlapi-webhook.py', reloading
+                  ]
+                }
+            }
+        ], 
+        "allRequiredParamsPresent": true, 
+        "parameters": {}, 
+        "languageCode": "ko", 
+        "intentDetectionConfidence": 1.0, 
+        "action": "question", 
+        "intent": {
+            "displayName": "question", 
+            "name": "projects/mlapi-demo/agent/intents/70d894f3-2e37-47b6-a34e-b8b1dbd6f1c7"
+        }, 
+        "diagnosticInfo": {}, 
+        "queryText": "QUESTION", 
+        "outputContexts": [
+            {
+                "name": "projects/mlapi-demo/agent/sessions/1525826554137/contexts/question"
+            }, 
+            {
+                "parameters": {
+                    "language.original": "\uc601\uc5b4", 
+                    "language": "\uc601\uc5b4"
+                }, 
+                "name": "projects/mlapi-demo/agent/sessions/1525826554137/contexts/english-test", 
+                "lifespanCount": 5
+            }
+        ]
+    }, 
+    "originalDetectIntentRequest": {
+        "source": "google", 
+        "version": "2", 
+        "payload": {
+            "inputs": [
+                {
+                    "rawInputs": [
+                        {
+                            "query": "\uc601\uc5b4\ud14c\uc2a4\ud2b8", 
+                            "inputType": "KEYBOARD"
+                        }
+                    ], 
+                    "intent": "actions.intent.TEXT", 
+                    "arguments": [
+                        {
+                            "rawText": "\uc601\uc5b4\ud14c\uc2a4\ud2b8", 
+                            "textValue": "\uc601\uc5b4\ud14c\uc2a4\ud2b8", 
+                            "name": "text"
+                        }
+                    ]
+                }
+            ], 
+            "isInSandbox": true, 
+            "surface": {
+                "capabilities": [
+                    {
+                        "name": "actions.capability.WEB_BROWSER"
+                    }, 
+                    {
+                        "name": "actions.capability.AUDIO_OUTPUT"
+                    }, 
+                    {
+                        "name": "actions.capability.SCREEN_OUTPUT"
+                    }, 
+                    {
+                        "name": "actions.capability.MEDIA_RESPONSE_AUDIO"
+                    }
+                ]
+            }, 
+            "conversation": {
+                "conversationId": "1525826554137", 
+                "type": "ACTIVE", 
+                "conversationToken": "[]"
+            }, 
+            "availableSurfaces": [
+                {
+                    "capabilities": [
+                        {
+                            "name": "actions.capability.AUDIO_OUTPUT"
+                        }, 
+                        {
+                            "name": "actions.capability.SCREEN_OUTPUT"
+                        }
+                    ]
+                }
+            ], 
+            "user": {
+                "locale": "ko-KR", 
+                "userId": "ABwppHEDKIqvivYeHkHYDTuCxt9C4-KnE1EzcNczdx6fdX_qv43jOT77Qqz2ppG3RUszF7KJv28eAQ", 
+                "lastSeen": "2018-05-09T00:42:25Z"
+            }
+        }
+    }, 
+    "session": "projects/mlapi-demo/agent/sessions/1525826554137", 
+    "responseId": "39674580-8de1-4627-9968-599c25942e3c"
+}
+Aciont: question
+Question No: 12
+Response: {"outputContexts": [{"parameters": {"question": "victory", "answers": "\uc2b9\ub9ac, \uc2b9\ub9ac\ud558\ub2e4"}, "name": "projects/${PROJECT_ID}/agent/sessions/${SESSION_ID}/contexts/english-test", "lifespanCount": 10}], "fulfillmentText": "\ubb38\uc81c: victory"}
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 420-340-433
