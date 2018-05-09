@@ -1,0 +1,96 @@
+
+<div align='center' valign='center'>
+<form action="___RUN_SPEECH_API___" method="post" enctype='multipart/form-data'>
+    <table style="height: 120px; width: 666px;">
+    <tbody>
+    <tr>
+    <td style="width: 652px; text-align: center;" colspan="3">
+    <h1>Speech API Demo</h1>
+    </td>
+    </tr>
+    <tr>
+    <td style="width: 207px;"></td>
+    <td style="width: 397px;"><a href='https://console.cloud.google.com/storage/browser' target='_blank'>View Cloud Storage</a></td>
+    <td style="width: 48px;">&nbsp;</td>
+    </tr>
+    <tr>
+        <td style="width: 207px;"></td>
+        <td style="width: 397px;"><a href='https://cloud.google.com/speech/?hl=ko' target='_blank'>Google Speech API Demo</a></td>
+        <td style="width: 48px;">&nbsp;</td>
+        </tr>
+    <tr>
+        <td style="width: 207px;"></td>
+        <td style="width: 397px;"><a href='https://storage.googleapis.com/cloud-speech-api-demos/streaming/index.html' target='_blank'>Google Cloud Speech Demo</a></td>
+        <td style="width: 48px;">&nbsp;</td>
+        </tr>
+        <tr>
+    <td style="width: 207px;">&nbsp;Audio/Voice file URL:</td>
+    <td style="width: 397px;"><input name="url" size="60" type="text" /></td>
+    <td style="width: 48px;">&nbsp;</td>
+    </tr>
+    <tr>
+    <td style="width: 207px;">&nbsp;Audio/Voice file upload:</td>
+    <td style="width: 397px;"><input name="file" size="60" type="file" /></td>
+    <td style="width: 48px;">&nbsp;</td>
+    </tr>
+    <tr>
+    <td style="width: 207px;">&nbsp;Language</td>
+    <td style="width: 397px;"><select name="language">
+        <option>ko-KR</option>
+        <option>en-US</option>
+    </select></td>
+    <td style="width: 48px;">&nbsp;</td>
+    </tr>
+    <tr>
+    <td style="width: 207px;">&nbsp;Synchronous</td>
+    <td style="width: 397px;"><select name="sync">
+    <option>Yes</option>
+    <option>No</option>
+    </select></td>
+    <td style="width: 48px;">&nbsp;</td>
+    </tr>
+    <tr>
+    <td style="width: 207px;">&nbsp;Model</td>
+    <td style="width: 397px;"><select name="model">
+    <option>default</option>
+    <option>phone_call</option>
+    <option>video</option>
+    <option>command_and_search</option>
+    </select></td>
+    <td style="width: 48px;">&nbsp;</td>
+    </tr>
+    <tr>
+    <td style="width: 207px;">&nbsp;Sample Rate:</td>
+    <td style="width: 397px;"><input name="rate" size="60" type="text" value="16000" /></td>
+    <td style="width: 48px;">&nbsp;</td>
+    </tr>
+    <tr>
+    <td style="width: 207px;">&nbsp;Start Time(min):</td>
+    <td style="width: 397px;"><input name="start_time" size="10" type="text" value="0" /></td>
+    <td style="width: 48px;">&nbsp;</td>
+    </tr>
+    <tr>
+    <td style="width: 207px;">&nbsp;End Time(min):</td>
+    <td style="width: 397px;"><input name="end_time" size="10" type="text" value="-1" /></td>
+    <td style="width: 48px;">&nbsp;</td>
+    </tr>
+    <tr>
+    <td style="width: 207px;">&nbsp;Response timeout(min): </td>
+    <td style="width: 397px;">30</td>
+    <td style="width: 48px;">&nbsp;</td>
+    </tr>
+    <tr>
+    <tr>
+    <td style="width: 207px;">&nbsp;</td>
+    <td style="width: 397px;">&nbsp;</td>
+    <td style="width: 48px;">&nbsp;</td>
+    </tr>
+    <tr>
+    <td style="width: 207px;">&nbsp;</td>
+    <td style="width: 397px;"><input name='recognize' type="submit" value="  Recognize  " />&nbsp;&nbsp;<input name='audioInfo' type="submit" value="  Audio Info  " /></td>
+    <td style="width: 48px;">&nbsp;</td>
+    </tr>
+    </tbody>
+    </table>
+    </form>
+</div>
