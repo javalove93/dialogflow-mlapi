@@ -17,3 +17,4 @@
 
 * Run run_webhook.sh
 
+* How to guide: https://github.com/javalove93/dialogflow-mlapi/raw/master/How%20to%20install%20agent.pdf

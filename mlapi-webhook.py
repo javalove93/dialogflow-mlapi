@@ -210,7 +210,7 @@ def loadSheet():
                             discoveryServiceUrl=discoveryUrl)
 
     # Change id to your Google Sheets
-    spreadsheetId = '1gg8KK6nJewBV46u1EZ5rIabs8SVJqW4cRJuIFsgmjIE'
+    spreadsheetId = '12PRLit07kVf0ipv9zc7Tu7VRauqG8eoDszOoaSCIVa4'
     rangeName = 'Sheet1!A:C'
     majorDimension = 'ROWS'
 
