@@ -1,5 +1,5 @@
 # Replace the following service account key with yours
-export GOOGLE_APPLICATION_CREDENTIALS=../../jerryjg-kr-ce-api-eb23afc71dbe.json
+export GOOGLE_APPLICATION_CREDENTIALS=speech-demo.json
 export UPLOAD_FOLDER='/opt/download'
 ps -ef | grep python | grep main.py | awk '{print "kill " $2}' | sh -x
 nohup python main.py 2>&1 &
